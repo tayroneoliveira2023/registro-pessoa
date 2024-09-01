@@ -51,3 +51,33 @@ lógica de negócios.
 - **Lombok**
 - **Maven**
 - **Selenium 4.4.0**
+
+## Como o Projeto Ajuda o Gestor a Entender os Cenários dos Testes com o Serenity
+
+Este projeto utiliza o Serenity BDD para fornecer relatórios detalhados dos testes de integração, ajudando o gestor a
+entender os diferentes cenários de testes de forma clara e visual. O Serenity BDD gera relatórios que incluem:
+
+- **Resumo dos Testes**: Mostra o número total de testes, quantos passaram, falharam ou foram ignorados.
+- **Detalhes dos Testes**: Fornece informações detalhadas sobre cada teste, incluindo os passos executados, os dados de
+  entrada e os resultados esperados e reais.
+- **Histórico de Execuções**: Permite visualizar o histórico das execuções dos testes, facilitando a identificação de
+  padrões e tendências.
+
+## Instruções para Gerar os Testes e Relatórios com o Serenity
+
+1. **Executar os Testes**: Para executar os testes e gerar os relatórios do Serenity, utilize o seguinte comando Maven:
+
+   ```bash
+   mvn clean verify
+   ```
+   Este comando irá compilar o projeto, executar os testes e gerar os relatórios do Serenity na pasta
+   `target/site/serenity`.
+
+2. **Abrir os Relatórios**: Após a execução dos testes, os relatórios do Serenity estarão disponíveis no seguinte
+   caminho:
+
+   ```
+   target/site/serenity/index.html
+   ```
+
+   Abra o arquivo `index.html` em um navegador para visualizar os relatórios detalhados dos testes de integração.
